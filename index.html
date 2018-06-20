@@ -40,7 +40,19 @@
                     <a class="header-nav_item" href="#">Blandit rhoncus</a>
                     <a class="header-nav_item" href="#">Placerat</a>
                 </nav>
+                <div class="header-nav_mobile">
+                    <div class="menu-btn">
+                        <span></span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="mobile-menu">
+            <a class="mobile-menu_link" href="#">Fusce at</a>
+            <a class="mobile-menu_link" href="#">Fasilisis</a>
+            <a class="mobile-menu_link" href="#">Ante donec</a>
+            <a class="mobile-menu_link" href="#">Blandit rhoncus</a>
+            <a class="mobile-menu_link" href="#">Placerat</a>
         </div>
         <div class="header-center">
             <div class="header-title text-center">
@@ -163,7 +175,15 @@
                 Try awsome tool for desgners <strong>symu.co</strong></p>
         </div>
     </footer>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+    <script>
+        $('.menu-btn').on('click', function(e) {
+            e.preventDefault;
+            $(this).toggleClass('menu-btn_active');
+            $('.mobile-menu').toggleClass('mobile-menu_active');
+        });
 
+    </script>
 </body>
 </html>
